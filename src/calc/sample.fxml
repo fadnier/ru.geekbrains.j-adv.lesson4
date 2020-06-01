@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<BorderPane fx:controller="calc.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+    <stylesheets>
+        <URL value="@/calc/style.css" />
+    </stylesheets>
+
+    <top>
+        <VBox>
+            <TextField fx:id="textFieldHistory" editable="false"/>
+            <TextField fx:id="textFieldSumm" prefHeight="50" editable="false"/>
+        </VBox>
+    </top>
+    <center>
+        <GridPane fx:id="gridPane" alignment="center" hgap="10" vgap="10">
+            <Button text="1" onAction="#keyPress" GridPane.rowIndex="0" GridPane.columnIndex="0" prefWidth="50" prefHeight="50"/>
+            <Button text="2" onAction="#keyPress" GridPane.rowIndex="0" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+            <Button text="3" onAction="#keyPress" GridPane.rowIndex="0" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+            <Button text="+" onAction="#keyPressPlus" GridPane.rowIndex="0" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            <Button text="4" onAction="#keyPress" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="50" prefHeight="50"/>
+            <Button text="5" onAction="#keyPress" GridPane.rowIndex="1" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+            <Button text="6" onAction="#keyPress" GridPane.rowIndex="1" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+            <Button text="-" onAction="#keyPressMinus" GridPane.rowIndex="1" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            <Button text="7" onAction="#keyPress" GridPane.rowIndex="2" GridPane.columnIndex="0" prefWidth="50" prefHeight="50"/>
+            <Button text="8" onAction="#keyPress" GridPane.rowIndex="2" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+            <Button text="9" onAction="#keyPress" GridPane.rowIndex="2" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+            <Button text="*" onAction="#keyPressYmn" GridPane.rowIndex="2" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            <Button text="0" onAction="#keyPress" GridPane.rowIndex="3" GridPane.columnIndex="0" prefWidth="50" prefHeight="50"/>
+            <Button text="." onAction="#keyPress" GridPane.rowIndex="3" GridPane.columnIndex="1" prefWidth="50" prefHeight="50"/>
+            <Button text="=" onAction="#keyPressRavn" GridPane.rowIndex="3" GridPane.columnIndex="2" prefWidth="50" prefHeight="50"/>
+            <Button text="/" onAction="#keyPressDel" GridPane.rowIndex="3" GridPane.columnIndex="3" prefWidth="50" prefHeight="50"/>
+            <Button text="Rst" onAction="#keyPressRst" GridPane.rowIndex="0" GridPane.columnIndex="4" prefWidth="50" prefHeight="50"/>
+        </GridPane>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>

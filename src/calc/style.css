@@ -1,0 +1,9 @@
+#textFieldSumm{
+    -fx-font-size: 20px;
+}
+
+Button {
+    -fx-color: red;
+    -fx-width: 190px;
+    -fx-font-size: 15px;
+}

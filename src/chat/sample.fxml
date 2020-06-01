@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:controller="chat.Controller"
+            xmlns:fx="http://javafx.com/fxml" >
+    <center>
+        <TextArea fx:id="textArea" editable="false"/>
+    </center>
+    <bottom>
+        <GridPane alignment="center" hgap="10" vgap="10">
+            <TextField fx:id="textField" onKeyPressed="#sendTextField" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="700"/>
+            <Button fx:id="btnSend" onAction="#sendText" text="Отправить" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        </GridPane>
+    </bottom>
+</BorderPane>
