@@ -3,6 +3,7 @@ package calc;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
@@ -17,49 +18,9 @@ public class Controller {
     @FXML
     public TextField textFieldHistory;
 
-
-    public void keyPress1() {
-        textFieldSumm.appendText("1");
-    }
-
-    public void keyPress2() {
-        textFieldSumm.appendText("2");
-    }
-
-    public void keyPress3() {
-        textFieldSumm.appendText("3");
-    }
-
-    public void keyPress4() {
-        textFieldSumm.appendText("4");
-    }
-
-    public void keyPress5() {
-        textFieldSumm.appendText("5");
-    }
-
-    public void keyPress6() {
-        textFieldSumm.appendText("6");
-    }
-
-    public void keyPress7() {
-        textFieldSumm.appendText("7");
-    }
-
-    public void keyPress8() {
-        textFieldSumm.appendText("8");
-    }
-
-    public void keyPress9() {
-        textFieldSumm.appendText("9");
-    }
-
-    public void keyPress0() {
-        textFieldSumm.appendText("0");
-    }
-
-    public void keyPressTk() {
-        textFieldSumm.appendText(".");
+    public void keyPress(ActionEvent actionEvent) {
+        Button btn = (Button) actionEvent.getSource();
+        textFieldSumm.appendText(btn.getText());
     }
 
     public void keyPressRavn() {
@@ -114,6 +75,5 @@ public class Controller {
         }
 
     }
-
 
 }
